@@ -1,0 +1,82 @@
+
+/* removing default spacing */
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* smooth scrolling */
+html{
+    scroll-behavior: smooth;
+}    
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #000;
+        color: white;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .hero{
+        position: relative;
+        height: 100vh;
+        background-image: url("assets/images/background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .overlay{
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.65);
+       
+    }
+
+    .navbar{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 8%;
+
+    }
+
+    .logo{
+        width: 160px;
+    }
+
+    .nav-right{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+    }
+
+    .language{
+         padding: 8px 14px;
+         background: black;
+         color: white;
+         border: 1px solid gray;
+         border-radius: 4px;
+    
+    }
+
+    .sign-in{
+        background: #e50914;
+        color: white;
+        border: none;
+        padding: 8px 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .sign-in:hover{
+        background: #c11119;
+    }
